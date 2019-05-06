@@ -3,4 +3,4 @@ VOLUME /tmp
 EXPOSE 8080
 ARG JAR_FILE=target/springboot-karma-0.0.1-SNAPSHOT.jar
 ADD ${JAR_FILE} karma.jar
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/karma.jar"]
+ENTRYPOINT ["java","-jar","/karma.jar"]
